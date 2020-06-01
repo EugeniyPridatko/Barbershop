@@ -112,22 +112,22 @@ q {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("./fonts/Montserrat-Regular.eot");
-  src: url("./fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Montserrat-Regular.woff2") format("woff2"), url("./fonts/Montserrat-Regular.woff") format("woff"), url("./fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("./fonts/Montserrat-Bold.eot");
-  src: url("./fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/Montserrat-Bold.woff2") format("woff2"), url("./fonts/Montserrat-Bold.woff") format("woff"), url("./fonts/Montserrat-Bold.ttf") format("truetype");
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #ffffff;
 }
@@ -137,7 +137,7 @@ body {
 }
 
 .container {
-  width: 1320px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -156,7 +156,51 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1200px;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .header__burger {
+    display: block;
+  }
+}
+
+.header__burger-line {
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+}
+
+.header__burger-line-1 {
+  top: 41px;
+  left: 32px;
+}
+
+.header__burger-line-2 {
+  top: 47px;
+  left: 32px;
+}
+
+.header__burger-line-3 {
+  top: 53px;
+  left: 32px;
+}
+
+@media screen and (max-width: 1250px) {
+  .header__logo-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .header__nav {
+    display: none;
+  }
 }
 
 .header__list {
@@ -180,8 +224,22 @@ body {
   transition: .5s;
 }
 
-.header__item-link:hover {
+.header__active-page {
   color: #FF7A00;
+  position: relative;
+  font-weight: bold;
+}
+
+.header__active-page::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #FF7A00;
+  border-radius: 50%;
+  background-color: #FF7A00;
+  width: 5px;
+  height: 5px;
+  top: 7px;
+  right: 54px;
 }
 
 .header__wrapper-buttons {
@@ -191,17 +249,31 @@ body {
   color: #FFFFFF;
 }
 
-.header__basket-img {
+.header__basket {
   margin-right: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__basket-number {
+  font-size: 24px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1250px) {
+  .header__basket-number {
+    margin: 0;
+  }
 }
 
 .header__button {
-  font-family: Montserrat, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   color: #FFFFFF;
-  background-color: #222222;
-  border: 1px solid #FFF2E5;
   border-radius: 4px;
   margin-right: 8px;
   padding: 16px 32px;
@@ -209,16 +281,32 @@ body {
   transition: .5s;
 }
 
-.header__button:hover {
-  background-color: #FF7A00;
+.header__button-contact-us {
+  background-color: #222222;
+  border: 1px solid #FFF2E5;
+}
+
+.header__button-contact-us:hover {
+  background: #3D3A37;
+}
+
+.header__button-book-now {
+  background: #FF7A00;
+  border: none;
+}
+
+.header__button-book-now:hover {
+  background: #DA6401;
 }
 
 @media screen and (max-width: 1250px) {
-  .header .header__container {
+  .header__button {
     display: none;
   }
-  .header .header__basket-img {
-    display: block;
-  }
+}
+
+.hero {
+  padding: 209px 0 311px;
+  background-image: url("../img/hero-bg.png");
 }
 /*# sourceMappingURL=style.css.map */

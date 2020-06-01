@@ -1,13 +1,14 @@
-html{
-    font-family: 'Montserrat', sans-serif;
+html {
+    font-family: $main-font;
     font-size: 16px;
     color: #ffffff;
 }
-body{
+
+body {
     background: #000;
 }
 
 .container {
-    width: 1320px;
+    width: 1200px;
     margin: 0 auto;
 }
