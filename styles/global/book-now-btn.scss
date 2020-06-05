@@ -1,0 +1,18 @@
+.book-now-btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: $color-main;
+    margin-right: 8px;
+    padding: 16px 32px;
+    width: 165px;
+    height: 52px;
+    transition: .5s;
+    background: $color-title;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: #DA6401;
+    }
+}

@@ -129,7 +129,7 @@ q {
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 body {
@@ -139,6 +139,32 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 95%;
+  }
+}
+
+.book-now-btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #FFFFFF;
+  margin-right: 8px;
+  padding: 16px 32px;
+  width: 165px;
+  height: 52px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: #FF7A00;
+  border: none;
+  cursor: pointer;
+}
+
+.book-now-btn:hover {
+  background: #DA6401;
 }
 
 .header {
@@ -169,26 +195,11 @@ body {
 }
 
 .header__burger-line {
-  position: absolute;
   width: 28px;
   height: 3px;
   border-radius: 2px;
+  margin: 4px 0;
   background-color: #FFFFFF;
-}
-
-.header__burger-line-1 {
-  top: 41px;
-  left: 32px;
-}
-
-.header__burger-line-2 {
-  top: 47px;
-  left: 32px;
-}
-
-.header__burger-line-3 {
-  top: 53px;
-  left: 32px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -222,6 +233,10 @@ body {
   color: #FFFFFF;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.header__item-link:hover {
+  color: #FF7A00;
 }
 
 .header__active-page {
@@ -259,54 +274,99 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 1250px) {
+  .header__basket {
+    margin-right: 0;
+  }
+}
+
 .header__basket-number {
   font-size: 24px;
   margin-left: 8px;
 }
 
-@media screen and (max-width: 1250px) {
-  .header__basket-number {
-    margin: 0;
-  }
-}
-
-.header__button {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border-radius: 4px;
-  margin-right: 8px;
-  padding: 16px 32px;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
 .header__button-contact-us {
   background-color: #222222;
   border: 1px solid #FFF2E5;
+  width: 173px;
+  height: 52px;
 }
 
 .header__button-contact-us:hover {
   background: #3D3A37;
 }
 
-.header__button-book-now {
-  background: #FF7A00;
-  border: none;
-}
-
-.header__button-book-now:hover {
-  background: #DA6401;
+@media screen and (max-width: 1250px) {
+  .header__button-contact-us {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1250px) {
-  .header__button {
+  .header__button-book-now {
     display: none;
   }
 }
 
 .hero {
   padding: 209px 0 311px;
-  background-image: url("../img/hero-bg.png");
+  background: url("../img/hero-bg.png") no-repeat 100%/cover;
+}
+
+@media screen and (max-width: 1250px) {
+  .hero {
+    width: 100%;
+    padding: 134px 0 44px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .hero {
+    padding: 134px 0 44px;
+  }
+}
+
+.hero__logo-img {
+  margin-bottom: 73px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__logo-img {
+    width: 58%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero__logo-img {
+    width: 58%;
+  }
+}
+
+.hero__description {
+  width: 53%;
+  margin-bottom: 44px;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__description {
+    width: 57%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.hero__button {
+  background: #FF7A00;
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__button {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

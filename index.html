@@ -13,7 +13,8 @@
     <!-- HEADER -->
     <header class="header">
         <div class="container header__container">
-            <a href="#"><img src="./img/header-Logo.svg" alt="barbershop" class="header__logo-link"></a>
+            <a href="#" class="header__logo-link"><img src="./img/header-Logo.svg" alt="barbershop"
+                    class="header__logo-img"></a>
             <div class="header__burger">
                 <div class="header__burger-line header__burger-line-1"></div>
                 <div class="header__burger-line header__burger-line-2"></div>
@@ -23,7 +24,7 @@
                 <ul class="header__list">
                     <li class="header__list-item">
                         <a class="header__item-link header__active-page">Home</a>
-                     </li>
+                    </li>
                     <li class="header__list-item">
                         <a href="#" class="header__item-link">Shop</a>
                     </li>
@@ -39,24 +40,24 @@
                     <span class="header__basket-number">0</span>
                 </div>
 
-                <button type="submit" class="header__button-contact-us header__button">contact us</button>
-                <button type="submit" class="header__button-book-now header__button">book now</button>
+                <div class="header__buttons">
+                    <button type="submit" class="header__button-contact-us book-now-btn">contact us</button>
+                    <button type="submit" class="header__button-book-now book-now-btn">book now</button>
+                </div>
             </div>
         </div>
     </header>
     <!--/HEADER -->
 
-     <!-- HERO  -->
-     <section class="hero">
+    <!-- HERO  -->
+    <section class="hero">
         <div class="container hero__container">
-            <div class="hero__wrapper-title">
-                <div class="hero__logo">
-                    <img src="../img/hero-Logo.svg" alt="barbershop" class="hero__logo-img" width="600" height="195">
-                </div>
-            </div>
+            <img src="./img/hero-Logo.svg" alt="barbershop" class="hero__logo-img" width="600" height="195">
+            <h1 class="hero__description">Our barbershop  is a place of style and mutual understanding in which it is pleasant to spend time.</h1>
+            <button type="submit" class="hero__button book-now-btn">book now</button>
         </div>
-     </section>
-        <!-- /HERO  --> 
+    </section> 
+    <!-- /HERO  -->
 </body>
 
 </html>

@@ -1,6 +1,58 @@
-.hero{
+.hero {
     padding: 209px 0 311px;
-    background-image: url("../img/hero-bg.png");
+    background: url("../img/hero-bg.png") no-repeat 100%/cover;
 
-    
+
+    @media screen and (max-width: 1250px) {
+        width: 100%;
+        padding: 134px 0 44px;
     }
+
+    @media screen and (max-width: 620px) {
+        padding: 134px 0 44px;
+    }
+ 
+
+
+    &__logo-img {
+        margin-bottom: 73px;
+
+        @media screen and (max-width: 1000px) {
+            width: 58%;
+            margin-bottom: 0;
+        }
+        @media screen and (max-width: 320px) {
+            width: 58%;
+        }
+
+    }
+
+    &__description {
+        width: 53%;
+        margin-bottom: 44px;
+        font-size: 32px;
+        line-height: 39px;
+        font-weight: bold;
+
+        @media screen and (max-width: 1000px) {
+            width: 57%;
+            font-size: 16px;
+            line-height: 20px;
+            
+            
+        }
+    }
+
+    &__button {
+        background: $color-title;
+        border: none;
+
+        @media screen and (max-width: 1000px) {
+            margin: 0;
+            
+        }
+    }
+
+
+
+}

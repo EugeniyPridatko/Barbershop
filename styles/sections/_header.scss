@@ -2,12 +2,16 @@
     background: #222222;
     padding: 24px 0;
 
+ 
+
+  
 
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // position: relative;
+
+      
     }
 
     &__burger {
@@ -19,25 +23,11 @@
         }
 
         &-line {
-            position: absolute;
             width: 28px;
             height: 3px;
             border-radius: 2px;
-            background-color: $color-white;
-            
-            &-1{
-                top:41px;
-                left: 32px;
-            }
-            
-            &-2{
-                top:47px;
-                left: 32px;
-            }
-            &-3{
-                top:53px;
-                left: 32px;  
-            }
+            margin: 4px 0;
+            background-color: $color-main;
         }
     }
 
@@ -69,21 +59,26 @@
 
     &__item-link {
         text-transform: capitalize;
-        color: $color-white;
+        color: $color-main;
         transition: .5s;
+
+        &:hover {
+            color: $color-title;
+        }
     }
 
+
     &__active-page {
-        color: $color-orange;
+        color: $color-title;
         position: relative;
         font-weight: bold;
 
         &::before {
             content: '';
             position: absolute;
-            border: 1px solid $color-orange;
+            border: 1px solid $color-title;
             border-radius: 50%;
-            background-color: $color-orange;
+            background-color: $color-title;
             width: 5px;
             height: 5px;
             top: 7px;
@@ -95,7 +90,8 @@
 
     &__wrapper-buttons {
         display: flex;
-        color: $color-white;
+        color: $color-main;
+
     }
 
     &__basket {
@@ -103,48 +99,39 @@
         display: flex;
         align-items: center;
 
+        @media screen and (max-width: 1250px) {
+            margin-right: 0;
+        }
+
+
         &-number {
             font-size: 24px;
             margin-left: 8px;
-
-            @media screen and (max-width: 1250px) {
-                margin: 0;
-
-            }
         }
     }
 
-    &__button {
-        font-weight: bold;
-        text-transform: uppercase;
-        color: $color-white;
-        border-radius: 4px;
-        margin-right: 8px;
-        padding: 16px 32px;
-        transition: .5s;
 
 
-        &-contact-us {
-            background-color: #222222;
-            border: 1px solid #FFF2E5;
+    &__button-contact-us {
+        background-color: #222222;
+        border: 1px solid #FFF2E5;
+        width: 173px;
+        height: 52px;
 
-            &:hover {
-                background: #3D3A37;
-            }
-        }
-
-        &-book-now {
-            background: $color-orange;
-            border: none;
-
-            &:hover {
-                background: #DA6401;
-            }
+        &:hover {
+            background: #3D3A37;
         }
 
         @media screen and (max-width: 1250px) {
             display: none;
-
         }
+    }
+
+    &__button-book-now {
+
+        @media screen and (max-width: 1250px) {
+            display: none;
+        }
+      
     }
 }
