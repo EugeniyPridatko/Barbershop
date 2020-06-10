@@ -4,55 +4,71 @@
 
 
     @media screen and (max-width: 1250px) {
-        width: 100%;
         padding: 134px 0 44px;
     }
 
-    @media screen and (max-width: 620px) {
-        padding: 134px 0 44px;
+    @media screen and (max-width: 420px) {
+        background: url("../img/bg-hero320.png"); 
+        padding: 213px 0 52px;
+        background-size: cover;
     }
- 
 
+    &__container {
+        @media screen and (max-width: 420px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
     &__logo-img {
+        width: 600px;
+        height: 194px;
         margin-bottom: 73px;
 
         @media screen and (max-width: 1000px) {
-            width: 58%;
-            margin-bottom: 0;
+            width: 400px;
+            height: 129px;
+            margin-bottom: 14px;
         }
-        @media screen and (max-width: 320px) {
-            width: 58%;
+
+        @media screen and (max-width: 420px) {
+            width: 288px;
+            height: 93px;
+            margin-bottom: 32px;
+
         }
 
     }
 
     &__description {
-        width: 53%;
+        width: 601px;
+        height: 98px;
         margin-bottom: 44px;
         font-size: 32px;
         line-height: 39px;
         font-weight: bold;
 
         @media screen and (max-width: 1000px) {
-            width: 57%;
+            width: 400px;
+            height: 50px;
             font-size: 16px;
             line-height: 20px;
-            
-            
+            margin-bottom: 26px;
+        }
+
+        @media screen and (max-width: 420px) {
+            width:288px;
+            height: 51px;
+            margin-bottom: 16px;
+            font-weight: 500;
+
         }
     }
 
     &__button {
-        background: $color-title;
-        border: none;
+        margin: 0;
 
-        @media screen and (max-width: 1000px) {
-            margin: 0;
-            
-        }
+       
     }
-
-
-
 }

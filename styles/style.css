@@ -163,6 +163,12 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 420px) {
+  .book-now-btn {
+    width: 100%;
+  }
+}
+
 .book-now-btn:hover {
   background: #DA6401;
 }
@@ -315,36 +321,58 @@ body {
 
 @media screen and (max-width: 1250px) {
   .hero {
-    width: 100%;
     padding: 134px 0 44px;
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 420px) {
   .hero {
-    padding: 134px 0 44px;
+    background: url("../img/bg-hero320.png");
+    padding: 213px 0 52px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 .hero__logo-img {
+  width: 600px;
+  height: 194px;
   margin-bottom: 73px;
 }
 
 @media screen and (max-width: 1000px) {
   .hero__logo-img {
-    width: 58%;
-    margin-bottom: 0;
+    width: 400px;
+    height: 129px;
+    margin-bottom: 14px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .hero__logo-img {
-    width: 58%;
+    width: 288px;
+    height: 93px;
+    margin-bottom: 32px;
   }
 }
 
 .hero__description {
-  width: 53%;
+  width: 601px;
+  height: 98px;
   margin-bottom: 44px;
   font-size: 32px;
   line-height: 39px;
@@ -353,20 +381,24 @@ body {
 
 @media screen and (max-width: 1000px) {
   .hero__description {
-    width: 57%;
+    width: 400px;
+    height: 50px;
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero__description {
+    width: 288px;
+    height: 51px;
+    margin-bottom: 16px;
+    font-weight: 500;
   }
 }
 
 .hero__button {
-  background: #FF7A00;
-  border: none;
-}
-
-@media screen and (max-width: 1000px) {
-  .hero__button {
-    margin: 0;
-  }
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
