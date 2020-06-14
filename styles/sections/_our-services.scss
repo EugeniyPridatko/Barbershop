@@ -1,60 +1,63 @@
 .our-services {
-    background: #ffffff;
-    padding: 159px 0 159px 0;
+    background: url("../img/bg-our-services.svg") no-repeat bottom left;
+    padding: 159px 0;
     position: relative;
-
-
-
-    &__title {
-        color: $color-title;
-        font-weight: bold;
-        font-size: 64px;
-        margin-bottom: 44px;
-        text-align: center;
-        margin-bottom: 44px;
-
-
-        // &::before {
-        //     content: '';
-        //     position: absolute;
-        //     border: 1px solid $color-title;
-        //     border-radius: 50%;
-        //     background-color: $color-title;
-        //     width: 21px;
-        //     height: 21px;
-        //     left:;
-        //     top: ;
-        // }
-    }
+    background-size: 1100px 718px;
 
     &__container {
-        background: #000000;
-        padding: 100px 0 100px 0;
+        background: rgba(#000000, .8);
+        padding: 100px 0;
+        min-height: 400px;
     }
 
     &__list {
-        width: 1127px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 61px;
 
         &-item {
+            position: relative;
             display: flex;
+            flex-direction: column;
             color: #FFF1E3;
-            margin-bottom: 61px;
+            padding-left: 69px;
 
-            &:nth-child(4),
-            &:nth-child(5),
-            &:nth-child(6){
-                margin-bottom: 0;
+            &::before {
+                content: "";
+                height: 69px;
+                width: 69px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &:nth-child(1)::before {
+                background-image: url("../img/scissors.png");
+            }
+
+            &:nth-child(2)::before {
+                background-image: url("../img/razor.png");
+            }
+
+            &:nth-child(3)::before {
+                background-image: url("../img/dryer.png");
+            }
+
+            &:nth-child(4)::before {
+                background-image: url("../img/bottle.png");
+            }
+
+            &:nth-child(5)::before {
+                background-image: url("../img/brush.png");
+            }
+
+            &:nth-child(6)::before {
+                background-image: url("../img/blade.png");
             }
         }
-    }
-
-    &__img {
-       margin-right: 10px;
-       width: 69px;
-       height: 100%;
     }
 
     &__item-description {
@@ -67,14 +70,16 @@
     &__item-title {
         font-size: 32px;
         font-weight: bold;
-        margin-bottom: 16px;
+        margin-bottom: 5px;
+        // костыль для  background: url("../img/bg-our-services.svg")
+        margin-top: -14px;
     }
 
     &__item-price {
         font-weight: bold;
     }
-    
-    &__bg-img{
+
+    &__bg-img {
         position: absolute;
         left: 0;
         bottom: 0;

@@ -1,0 +1,19 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-title;
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: 32px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $color-title;
+        width: 21px;
+        height: 21px;
+        margin-right: 14px;
+    }
+}
