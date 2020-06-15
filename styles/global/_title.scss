@@ -5,7 +5,9 @@
     color: $color-title;
     font-weight: bold;
     font-size: 64px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+
+  
 
     &::before {
         content: '';
@@ -15,5 +17,9 @@
         width: 21px;
         height: 21px;
         margin-right: 14px;
+    }
+    @media screen and (max-width: 1000px) {
+       margin-bottom: 24px;
+        font-size: 32px;
     }
 }

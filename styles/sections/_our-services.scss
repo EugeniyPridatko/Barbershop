@@ -4,6 +4,12 @@
     position: relative;
     background-size: 1100px 718px;
 
+    @media screen and (max-width: 1000px) {
+        background: none;
+        padding: 64px 0 0;
+    }
+
+
     &__container {
         background: rgba(#000000, .8);
         padding: 100px 0;
@@ -57,6 +63,9 @@
             &:nth-child(6)::before {
                 background-image: url("../img/blade.png");
             }
+        }
+        @media screen and (max-width: 1000px) {
+
         }
     }
 

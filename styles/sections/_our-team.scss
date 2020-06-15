@@ -1,0 +1,45 @@
+.our-team {
+    padding: 106px 0 116px;
+    display: flex;
+
+
+    &__img-persons-wrapper {
+        display: flex;
+        align-items: flex-end;
+
+    }
+
+    &__img-persons {
+        margin-right: 8px;
+
+        &:nth-child(2) {
+            box-shadow: 16px 16px #FF7A00,
+                16px -16px#FF7A00;
+            margin-right: 24px;
+        }
+
+        &:nth-child(4) {
+            margin-right: 16px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 53px;
+        height: 53px;
+        border: none;
+        background: #FFF2E5;
+    }
+
+     &__name-title {
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    &__description {
+        width: 441px;
+    }
+
+}
