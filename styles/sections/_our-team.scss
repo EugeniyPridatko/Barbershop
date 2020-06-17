@@ -27,6 +27,16 @@
         }
     }
 
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__main-title {
+        justify-content: flex-end;
+        margin-bottom: 55px;
+    }
+
     &__img-persons-wrapper {
         display: flex;
         align-items: flex-end;
