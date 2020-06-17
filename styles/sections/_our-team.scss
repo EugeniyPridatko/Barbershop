@@ -1,12 +1,20 @@
 .our-team {
     padding: 106px 0 116px;
-    display: flex;
 
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__main-title {
+        justify-content: flex-end;
+        margin-bottom: 55px;
+    }
 
     &__img-persons-wrapper {
         display: flex;
         align-items: flex-end;
-
     }
 
     &__img-persons {
@@ -33,13 +41,23 @@
         background: #FFF2E5;
     }
 
-     &__name-title {
+    &__description-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;;
+    }
+    &__name-title {
         font-weight: bold;
         font-size: 32px;
+        color: $color-title;
+        margin-bottom: 24px;
     }
 
     &__description {
         width: 441px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #222222;
     }
 
 }
