@@ -650,6 +650,18 @@ body {
   padding: 106px 0 116px;
 }
 
+@media screen and (max-width: 1250px) {
+  .our-team {
+    padding: 64px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .our-team {
+    padding: 32px 0;
+  }
+}
+
 .our-team__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,11 +671,29 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1250px) {
+  .our-team__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .our-team__main-title {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 55px;
+}
+
+@media screen and (max-width: 420px) {
+  .our-team__main-title {
+    margin: 0 16px 41px 0;
+  }
 }
 
 .our-team__img-persons-wrapper {
@@ -673,6 +703,12 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media screen and (max-width: 1250px) {
+  .our-team__img-persons-wrapper {
+    margin-bottom: 40px;
+  }
 }
 
 .our-team__img-persons {
@@ -687,6 +723,12 @@ body {
 
 .our-team__img-persons:nth-child(4) {
   margin-right: 16px;
+}
+
+@media screen and (max-width: 750px) {
+  .our-team__img-persons:nth-child(1), .our-team__img-persons:nth-child(3), .our-team__img-persons:nth-child(4) {
+    display: none;
+  }
 }
 
 .our-team__button {
@@ -718,6 +760,14 @@ body {
           justify-content: flex-end;
 }
 
+@media screen and (max-width: 750px) {
+  .our-team__description-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .our-team__name-title {
   font-weight: bold;
   font-size: 32px;
@@ -725,10 +775,23 @@ body {
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 1000px) {
+  .our-team__name-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+
 .our-team__description {
   width: 441px;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
+}
+
+@media screen and (max-width: 750px) {
+  .our-team__description {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

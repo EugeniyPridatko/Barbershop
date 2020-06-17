@@ -1,20 +1,41 @@
 .our-team {
     padding: 106px 0 116px;
 
+    @media screen and (max-width: 1250px) {
+        padding: 64px 0;
+    }
+
+    @media screen and (max-width: 1000px){
+        padding: 32px 0;
+    }
 
     &__content {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 1250px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__main-title {
         justify-content: flex-end;
         margin-bottom: 55px;
+        @media screen and (max-width: 420px){
+            margin: 0 16px 41px 0;
+        }
     }
 
     &__img-persons-wrapper {
         display: flex;
         align-items: flex-end;
+
+        @media screen and (max-width: 1250px) {
+            margin-bottom: 40px;
+        }
+
+
     }
 
     &__img-persons {
@@ -29,6 +50,15 @@
         &:nth-child(4) {
             margin-right: 16px;
         }
+
+        @media screen and (max-width: 750px) {
+
+            &:nth-child(1),
+            &:nth-child(3),
+            &:nth-child(4) {
+                display: none;
+            }
+        }
     }
 
     &__button {
@@ -41,16 +71,26 @@
         background: #FFF2E5;
     }
 
-    &__description-wrapper{
+    &__description-wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;;
+        justify-content: flex-end;
+        @media screen and (max-width: 750px){
+           align-items: center;
+        }
+       
     }
+
     &__name-title {
         font-weight: bold;
         font-size: 32px;
         color: $color-title;
         margin-bottom: 24px;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
     }
 
     &__description {
@@ -58,6 +98,12 @@
         font-size: 16px;
         line-height: 20px;
         color: #222222;
+
+        @media screen and (max-width: 750px){
+            width: 90%;
+            
+        }
+      
     }
 
 }
