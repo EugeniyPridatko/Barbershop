@@ -120,21 +120,70 @@
                 <div class="our-team__description-wrapper">
                     <h3 class="our-team__name-title">Jorge Jones</h3>
                     <p class="our-team__description">- How did you become a barber?
-                      <br>
+                        <br>
                         - I decided to master the creative profession. And he found himself precisely in this. So my
                         life
                         has
                         changed dramatically.
-                       <br> - What exactly do you like in your profession? Why are you blissing?
-                       <br> - I like to work in a men's team, communicating with interesting people.
-                       <br> - Why should a person who wants a haircut choose you?
-                       <br> - Because I'm old and charismatic.</p>
+                        <br> - What exactly do you like in your profession? Why are you blissing?
+                        <br> - I like to work in a men's team, communicating with interesting people.
+                        <br> - Why should a person who wants a haircut choose you?
+                        <br> - Because I'm old and charismatic.</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- /OUR-TEAM -->
-   <!-- APPOITMENT -->
+
+    <!-- APPOINTMENT -->
+    <section class="appointment">
+        <div class="container appointment__container">
+            <h3 class="appointment__main-title">Book an appointment right now!</h3>
+            <h5 class="appointment__text">Please Complete all these fields.</h5>
+            <form action="#" class="appointment__form" method="post">
+                <div class="appointment__form-title">Name:</div>
+                <input class="appointment__form-name appointment__own-styles" type="text" name="name"
+                    placeholder="Gregory Simmmons">
+                <div class="appointment__form-data-time-wrapper">
+                    <div>
+                        <div class="appointment__form-title">Date:</div>
+                        <input class="appointment__form-date appointment__own-styles" type="text" name="date"
+                            placeholder="Enter date">
+                    </div>
+                    <div>
+                        <div class="appointment__form-title">Time:</div>
+                        <input class="appointment__form-time appointment__own-styles" type="text" name="time"
+                            placeholder="Enter time">
+                    </div>
+                </div>
+                <div class="appointment__form-title">Choose a master:</div>
+                <div class="appointment__form-radio appointment__own-styles">
+                    <div class="appointment__radio-left">
+                        <input type="radio" name="question" value="Choose something">Choose something
+                        <input type="radio" name="question" value="Choose something">Choose something
+                    </div>
+
+                    <div class="appointment__radio-right">
+                        <input type="radio" name="question" value="Choose something" checked>Choose something
+                        <input type="radio" name="question" value="Choose something">Choose something
+                    </div>
+                </div>
+
+                <div class="appointment__form-title">Choose a services:</div>
+                <label class="appointment__form-checkbox appointment__own-styles">
+                    <input type="checkbox" name="subscribe" checked>Choose something
+                    <input type="checkbox" name="subscribe" checked>Choose something
+                    <input type="checkbox" name="subscribe">Choose something
+                    <input type="checkbox" name="subscribe">Choose something
+                    <input type="checkbox" name="subscribe" checked>Choose something
+                    <input type="checkbox" name="subscribe" checked>Choose something
+                </label>
+
+                <button type="submit" class="appointment__button book-now-btn">book now</button>
+            </form>
+        </div>
+    </section>
+    <!-- /APPOINTMENT -->
 </body>
 
 </html>

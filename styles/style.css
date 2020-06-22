@@ -761,6 +761,12 @@ body {
   height: 53px;
   border: none;
   background: #FFF2E5;
+  border-radius: 4px;
+}
+
+.our-team__button:hover {
+  background: #FFE8D1;
+  cursor: pointer;
 }
 
 .our-team__description-wrapper {
@@ -809,5 +815,100 @@ body {
   .our-team__description {
     width: 90%;
   }
+}
+
+.appointment {
+  color: #222222;
+  padding: 64px 0;
+  background: url("../img/bg-appointment.png") no-repeat center/cover;
+}
+
+.appointment__container {
+  background: #FFFFFF;
+  padding: 64px 0;
+  width: 852px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.appointment__main-title {
+  width: 375px;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.appointment__text {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.appointment__own-styles {
+  border: 1px solid #DFDFDF;
+  border-radius: 4px;
+  height: 44px;
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+
+.appointment__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+}
+
+.appointment__form-title {
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+
+.appointment__form-data-time-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.appointment__form-name::-webkit-input-placeholder, .appointment__form-date::-webkit-input-placeholder, .appointment__form-time::-webkit-input-placeholder {
+  color: #DFDFDF;
+}
+
+.appointment__form-name:-ms-input-placeholder, .appointment__form-date:-ms-input-placeholder, .appointment__form-time:-ms-input-placeholder {
+  color: #DFDFDF;
+}
+
+.appointment__form-name::-ms-input-placeholder, .appointment__form-date::-ms-input-placeholder, .appointment__form-time::-ms-input-placeholder {
+  color: #DFDFDF;
+}
+
+.appointment__form-name::placeholder, .appointment__form-date::placeholder, .appointment__form-time::placeholder {
+  color: #DFDFDF;
+}
+
+.appointment__form-date, .appointment__form-time {
+  width: 288px;
+}
+
+.appointment__form-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
