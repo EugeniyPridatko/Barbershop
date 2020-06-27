@@ -5,7 +5,7 @@
 
     @media screen and (max-width: 750px) {
         background: none;
-
+        padding: 0;
     }
 
     &__container {
@@ -29,12 +29,24 @@
         font-size: 32px;
         text-align: center;
         margin-bottom: 32px;
+
+        @media screen and (max-width: 750px) {
+            font-size: 16px;
+            text-transform: uppercase;
+            width: 288px;
+            margin-bottom: 24px;
+        }
+
     }
 
     &__text {
         text-align: center;
         width: 288px;
         margin-bottom: 64px;
+
+        @media screen and (max-width: 750px) {
+            margin-bottom: 32px;
+        }
 
     }
 
@@ -55,13 +67,20 @@
     &__wrapper-name {
         margin-bottom: 24px;
 
-      
+
     }
 
     &__form {
         display: flex;
         flex-direction: column;
         width: 600px;
+        
+
+        @media screen and (max-width: 750px) {
+            width: 90%;
+            align-items: center;
+        }
+
 
 
 
@@ -70,12 +89,29 @@
             justify-content: space-between;
             margin-bottom: 24px;
 
+            @media screen and (max-width: 750px) {
+                flex-direction: column;
+            }
+
+        }
+
+        &-wrapper-data {
+            @media screen and (max-width: 750px) {
+                margin-bottom: 16px;
+
+            }
         }
 
         &-name::placeholder,
         &-date::placeholder,
         &-time::placeholder {
             color: #DFDFDF;
+        }
+
+        &-name {
+            @media screen and (max-width: 750px) {
+                width: 288px;
+            }
         }
 
         &-date,
@@ -100,12 +136,21 @@
             // &:nth-child(2){
             //     margin-bottom: 32px;
             // }
+
+            @media screen and (max-width: 750px) {
+                width: 288px;
+                grid-template-columns: 1fr;
+            }
         }
     }
 
     &__input-title {
         margin-bottom: 8px;
         margin-left: 24px;
+
+        @media screen and (max-width: 750px) {
+            width: 147px;
+        }
     }
 
     &__label-radio {
@@ -190,5 +235,10 @@
 
     &__button {
         margin: 0 auto;
+        
+        @media screen and (max-width: 420px){
+            width: 288px;
+            margin: 0;
+        }
     }
 }
