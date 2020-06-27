@@ -1,0 +1,194 @@
+.subscribe {
+    color: #222222;
+    padding: 64px 0;
+    background: url("../img/bg-appointment.png") no-repeat center/cover;
+
+    @media screen and (max-width: 750px) {
+        background: none;
+
+    }
+
+    &__container {
+        background: #FFFFFF;
+        padding: 64px 126px;
+        width: 852px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1000px) {
+            width: 85%;
+            padding: 44px 126px;
+        }
+    }
+
+    &__form-title {
+        width: 375px;
+        font-weight: bold;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        text-align: center;
+        width: 288px;
+        margin-bottom: 64px;
+
+    }
+
+    &__own-styles {
+        border: 1px solid #DFDFDF;
+        border-radius: 4px;
+        padding-left: 24px;
+        width: 100%;
+        height: 44px;
+    }
+
+    &__label-title {
+        display: block;
+        margin-left: 24px;
+        margin-bottom: 8px;
+    }
+
+    &__wrapper-name {
+        margin-bottom: 24px;
+
+      
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+
+
+
+        &-wrapper-data-time {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+
+        }
+
+        &-name::placeholder,
+        &-date::placeholder,
+        &-time::placeholder {
+            color: #DFDFDF;
+        }
+
+        &-date,
+        &-time {
+            width: 288px;
+
+        }
+
+
+
+        &-radio {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 6px;
+            padding: 19px 27px;
+            min-height: 20px;
+            border: 1px solid #DFDFDF;
+            border-radius: 4px;
+            margin-bottom: 24px;
+
+            // &:nth-child(2){
+            //     margin-bottom: 32px;
+            // }
+        }
+    }
+
+    &__input-title {
+        margin-bottom: 8px;
+        margin-left: 24px;
+    }
+
+    &__label-radio {
+        position: relative;
+        padding-left: 27px;
+    }
+
+    &__label-checkbox {
+        position: relative;
+        padding-left: 27px;
+    }
+
+    &__input-radio {
+        display: none;
+
+        &:checked~.subscribe__radio::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: $color-title;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    }
+
+    &__radio {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #222222;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    &__input-checkbox {
+        display: none;
+
+        &:checked~.subscribe__checkbox {
+            border-color: $color-title;
+            background-color: $color-title;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 6px;
+                background: #fff;
+                top: 5px;
+                left: 3px;
+                transform: rotate(-43deg);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 11px;
+                background: #fff;
+                top: 1px;
+                left: 8px;
+                transform: rotate(43deg);
+            }
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #222222;
+        border-radius: 3px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: #FFFFFF;
+    }
+
+    &__button {
+        margin: 0 auto;
+    }
+}

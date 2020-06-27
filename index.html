@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Barbershop</title>
     <link rel="stylesheet" href="./styles/style.css">
-
 </head>
 
 <body>
@@ -133,57 +132,59 @@
             </div>
         </div>
     </section>
-    <!-- /OUR-TEAM -->
+    <!--/OUR-TEAM -->
 
-    <!-- APPOINTMENT -->
-    <section class="appointment">
-        <div class="container appointment__container">
-            <h3 class="appointment__main-title">Book an appointment right now!</h3>
-            <h5 class="appointment__text">Please Complete all these fields.</h5>
-            <form action="#" class="appointment__form" method="post">
-                <div class="appointment__form-title">Name:</div>
-                <input class="appointment__form-name appointment__own-styles" type="text" name="name"
-                    placeholder="Gregory Simmmons">
-                <div class="appointment__form-data-time-wrapper">
-                    <div>
-                        <div class="appointment__form-title">Date:</div>
-                        <input class="appointment__form-date appointment__own-styles" type="text" name="date"
+    <!--SUBSCRIBE -->
+    <section class="subscribe">
+        <div class="subscribe__container">
+            <h3 class="subscribe__form-title">Book an appointment right now!</h3>
+            <h5 class="subscribe__text">Please complete all these fields.</h5>
+            <form class="subscribe__form">
+                <div class="subscribe__wrapper-name">
+                    <label for="name" class="subscribe__label-title">Name:</label>
+                    <input class="subscribe__form-name subscribe__own-styles" type="text" name="name" id="name"
+                        placeholder="Gregory Simmmons">
+                </div>
+                <div class="subscribe__form-wrapper-data-time">
+                    <div class="subscribe__form-wrapper-data">
+                        <label for="date" class="subscribe__label-title">Date:</label>
+                        <input class="subscribe__form-date subscribe__own-styles" type="text" name="date" id="date"
                             placeholder="Enter date">
                     </div>
-                    <div>
-                        <div class="appointment__form-title">Time:</div>
-                        <input class="appointment__form-time appointment__own-styles" type="text" name="time"
+                    <div class="subscribe__form-wrapper-time">
+                        <label for="time" class="subscribe__label-title">Time:</label>
+                        <input class="subscribe__form-time subscribe__own-styles" type="text" name="time" id="time"
                             placeholder="Enter time">
                     </div>
                 </div>
-                <div class="appointment__form-title">Choose a master:</div>
-                <div class="appointment__form-radio appointment__own-styles">
-                    <div class="appointment__radio-left">
-                        <input type="radio" name="question" value="Choose something">Choose something
-                        <input type="radio" name="question" value="Choose something">Choose something
-                    </div>
 
-                    <div class="appointment__radio-right">
-                        <input type="radio" name="question" value="Choose something" checked>Choose something
-                        <input type="radio" name="question" value="Choose something">Choose something
-                    </div>
+                <div class="subscribe__input-title">Choose a master:</div>
+                <div class="subscribe__form-radio ">
+                    <label class="subscribe__label-radio">
+                        <input class="subscribe__input-radio" type="radio" name="question" value="Choose something">Choose something<span class="subscribe__radio"></span></label>
+                    <label class="subscribe__label-radio">
+                        <input class="subscribe__input-radio" type="radio" name="question" value="Choose something">Choose something <span class="subscribe__radio"></span></label>
+                    <label class="subscribe__label-radio">
+                        <input class="subscribe__input-radio" type="radio" name="question" value="Choose something" checked>Choose something <span class="subscribe__radio"></span></label>
+                    <label class="subscribe__label-radio">
+                        <input class="subscribe__input-radio" type="radio" name="question" value="Choose something">Choose something <span class="subscribe__radio"></span></label>
                 </div>
 
-                <div class="appointment__form-title">Choose a services:</div>
-                <label class="appointment__form-checkbox appointment__own-styles">
-                    <input type="checkbox" name="subscribe" checked>Choose something
-                    <input type="checkbox" name="subscribe" checked>Choose something
-                    <input type="checkbox" name="subscribe">Choose something
-                    <input type="checkbox" name="subscribe">Choose something
-                    <input type="checkbox" name="subscribe" checked>Choose something
-                    <input type="checkbox" name="subscribe" checked>Choose something
-                </label>
+                <div class="subscribe__input-title">Choose a services:</div>
+                <div class="subscribe__form-radio">
+                    <label class="subscribe__label-checkbox"><input class="subscribe__input-checkbox" type="checkbox" name="subscribe" checked>Choose something <span class="subscribe__checkbox"></span></label>
+                    <label class="subscribe__label-checkbox"><input class="subscribe__input-checkbox" type="checkbox" name="subscribe" checked>Choose something <span class="subscribe__checkbox"></span></label>
+                    <label class="subscribe__label-checkbox"><input class="subscribe__input-checkbox" type="checkbox" name="subscribe" >Choose something <span class="subscribe__checkbox"></span></label>
+                    <label class="subscribe__label-checkbox"><input class="subscribe__input-checkbox" type="checkbox" name="subscribe" >Choose something <span class="subscribe__checkbox"></span></label>
+                    <label class="subscribe__label-checkbox"><input class="subscribe__input-checkbox" type="checkbox" name="subscribe" checked>Choose something <span class="subscribe__checkbox"></span></label>
+                    <label class="subscribe__label-checkbox"><input class="subscribe__input-checkbox" type="checkbox" name="subscribe" checked>Choose something <span class="subscribe__checkbox"></span></label>
+                </div>
 
-                <button type="submit" class="appointment__button book-now-btn">book now</button>
+                <button type="submit" class="subscribe__button book-now-btn">book now</button>
             </form>
         </div>
     </section>
-    <!-- /APPOINTMENT -->
+    <!--/SUBSCRIBE -->
 </body>
 
 </html>
