@@ -1127,6 +1127,12 @@ body {
   }
 }
 
+@media screen and (max-width: 420px) {
+  .products {
+    padding: 44px 0 60px;
+  }
+}
+
 .products__title {
   margin-bottom: 96px;
 }
@@ -1287,5 +1293,12 @@ body {
   height: 52px;
   background: #ffffff;
   border: none;
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .products__arrow-left, .products__arrow-right {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

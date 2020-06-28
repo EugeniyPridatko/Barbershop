@@ -4,6 +4,9 @@
     @media screen and (max-width: 1250px) {
         padding: 64px 0 131px;
     }
+    @media screen and (max-width: 420px){
+        padding: 44px 0 60px;
+    }
 
     
 
@@ -126,6 +129,7 @@
         display: flex;
         @media screen and (max-width: 750px) {
             justify-content: center;
+            
         }
     }
     &__arrow-left,
@@ -134,8 +138,9 @@
         height: 52px;
         background: #ffffff;
         border: none;
-        // display: none;
-
-      
+        display: none;
+        @media screen and (max-width: 750px){
+            display: block;
+        }
     }
 }
