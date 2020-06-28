@@ -235,6 +235,7 @@
 
     &__button {
         margin: 0 auto;
+        font-family: $main-font;
         
         @media screen and (max-width: 420px){
             width: 288px;

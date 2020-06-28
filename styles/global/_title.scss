@@ -6,7 +6,7 @@
     font-size: 64px;
     margin-bottom: 28px;
 
-  
+
 
     &::before {
         content: '';
@@ -17,17 +17,20 @@
         height: 21px;
         margin-right: 14px;
     }
+
     @media screen and (max-width: 1000px) {
-       margin-bottom: 24px;
+        margin-bottom: 24px;
         font-size: 32px;
-        &::before{
+
+        &::before {
             content: '';
             width: 9px;
             height: 9px;
         }
-       
+
     }
-    @media screen and (max-width: 420px){
+
+    @media screen and (max-width: 420px) {
         font-size: 16px;
         text-transform: uppercase;
     }

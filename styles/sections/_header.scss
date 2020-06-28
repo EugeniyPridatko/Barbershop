@@ -110,7 +110,7 @@
         border: 1px solid #FFF2E5;
         width: 173px;
         height: 52px;
-
+        font-family: $main-font;
         &:hover {
             background: #3D3A37;
         }
@@ -121,7 +121,7 @@
     }
 
     &__button-book-now {
-
+        font-family: $main-font;
         @media screen and (max-width: 1250px) {
             display: none;
         }
