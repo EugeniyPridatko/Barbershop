@@ -1517,4 +1517,75 @@ body {
     margin-bottom: 16px;
   }
 }
+
+.contact {
+  padding: 130px 0 138px;
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #222222;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 47px;
+}
+
+.contact__list-item-content {
+  margin-bottom: 24px;
+  padding-left: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact__item-title {
+  margin-bottom: 32px;
+}
+
+.contact__list-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 32px;
+}
+
+.contact__item-link {
+  margin-left: 13px;
+}
+
+.contact__weekdays {
+  padding-right: 40px;
+}
+
+.contact__weekend {
+  padding-right: 40px;
+}
 /*# sourceMappingURL=style.css.map */
