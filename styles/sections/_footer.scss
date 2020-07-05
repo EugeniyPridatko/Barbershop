@@ -1,0 +1,60 @@
+.footer {
+    background: #222222;
+    padding: 44px 0 170px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav-list-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 318px;
+    }
+
+    &__list-item {
+        margin-bottom: 24px;
+    }
+
+    &__item-link {
+        text-transform: capitalize;
+        color: $color-main;
+        transition: .5s;
+
+        &:hover {
+            color: $color-title;
+        }
+    }
+
+    &__contact-list {
+        display: flex;
+        width: 583px;
+        justify-content: space-between;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &-link {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__item-title {
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__contact-item{
+        margin-bottom: 24px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
