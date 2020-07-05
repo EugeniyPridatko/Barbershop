@@ -4,13 +4,22 @@
 
     &__container {
         display: flex;
-        justify-content: space-between;
     }
 
-    &__nav-list-wrapper {
+    &__logo-link {
+        margin-right: 73px;
+    }
+
+    &__list-wrapper {
         display: flex;
         justify-content: space-between;
-        width: 318px;
+        width: 100%;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1000px){
+          
+                    }
+
+
     }
 
     &__list-item {
@@ -32,6 +41,8 @@
         width: 583px;
         justify-content: space-between;
 
+        
+
         &-item {
             display: flex;
             flex-direction: column;
@@ -40,8 +51,10 @@
 
         &-link {
             display: flex;
-            justify-content: space-between;
         }
+    }
+    &__contact-item-link{
+        margin-right: 13px;
     }
 
     &__item-title {
@@ -50,10 +63,10 @@
         font-weight: bold;
     }
 
-    &__contact-item{
+    &__contact-item {
         margin-bottom: 24px;
 
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
     }
