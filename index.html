@@ -171,7 +171,7 @@
                             checked>Choose something <span class="subscribe__radio"></span></label>
                     <label class="subscribe__label-radio">
                         <input class="subscribe__input-radio" type="radio" name="question"
-                            value="Choose something">Choose something <span class="subscribe__radio"></span></label>
+                            value="Choose something">Choose something<span class="subscribe__radio"></span></label>
                 </div>
 
                 <div class="subscribe__input-title">Choose a services:</div>
@@ -273,10 +273,18 @@
                                 <path d="M12 22L2 12L12 2" stroke="#FF7A00" stroke-width="4" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg></button>
-                        <img class="reviews__img-persons" src="./img/reviews1.png" alt="pic" width="134" height="200">
-                        <img class="reviews__img-persons" src="./img/reviews2.png" alt="pic" width="197" height="293">
-                        <img class="reviews__img-persons" src="./img/our-team3.png" alt="pic" width="134" height="200">
-                        <img class="reviews__img-persons" src="./img/our-team4.png" alt="pic" width="134" height="200">
+                        <div class="reviews__img-wrapper1">
+                            <img class="reviews__img-persons reviews__img-persons1" src="./img/reviews1.png" alt="pic"
+                                width="134" height="200">
+                        </div>
+                        <div class="reviews__img-wrapper2">
+                            <img class="reviews__img-persons reviews__img-persons2" src="./img/reviews2.png" alt="pic"
+                                width="197" height="293">
+                        </div>
+                        <img class="reviews__img-persons reviews__img-persons3" src="./img/our-team3.png" alt="pic"
+                            width="134" height="200">
+                        <img class="reviews__img-persons reviews__img-persons4" src="./img/our-team4.png" alt="pic"
+                            width="134" height="200">
                         <button class="reviews__arrow-right"><svg width="14" height="24" viewbox="0 0 14 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 22L12 12L2 2" stroke="#FF7A00" stroke-width="4" stroke-linecap="round"
@@ -286,16 +294,20 @@
                     <div class="reviews__description-wrapper">
                         <h3 class="reviews__name-title">Jorge Jones</h3>
                         <p class="reviews__description">- How did you become a barber?
-                            <br>
-                            - I decided to master the creative profession. And he found himself precisely in this.
-                            So my
-                            life
-                            has
-                            changed dramatically.
-                            <br> - What exactly do you like in your profession? Why are you blissing?
-                            <br> - I like to work in a men's team, communicating with interesting people.
-                            <br> - Why should a person who wants a haircut choose you?
-                            <br> - Because I'm old and charismatic.</p>
+                            <span class="reviews__span-description">
+                                - I decided to master the creative profession. And he found himself precisely in this.
+                                So my
+                                life
+                                has
+                                changed dramatically.</span>
+                            <span class="reviews__span-description"> - What exactly do you like in your profession? Why
+                                are you blissing?</span>
+                            <span class="reviews__span-description"> - I like to work in a men's team, communicating
+                                with interesting people.</span>
+                            <span class="reviews__span-description"> - Why should a person who wants a haircut choose
+                                you?</span>
+                            <span class="reviews__span-description"> - Because I'm old and charismatic.</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -347,42 +359,45 @@
         <div class="container footer__container">
             <a href="#" class="footer__logo-link"><img src="./img/footer-Logo.svg" alt="barbershop"
                     class="footer__logo-img"></a>
-            <div class="footer__list-wrapper">
-                <ul class="footer__nav-list">
-                    <li class="footer__list-item"><a class=" header__active-page">Home</a></li>
-                    <li class="footer__list-item"><a href="#" class="footer__item-link">Shop</a></li>
-                    <li class="footer__list-item"> <a href="#" class="footer__item-link">Gallery</a></li>
-                    <li class="footer__list-item"> <a href="#" class="footer__item-link">Contact us</a></li>
-                </ul>
 
+            <ul class="footer__nav-list">
 
-                <ul class="footer__contact-list">
-                    <li class="footer__contact-list-item">
-                        <h2 class="footer__item-title">Contact us</h2>
-                        <span class="footer__contact-item">support@gmail.com</span>
-                        <span class="footer__contact-item">+38 (044) 15 25 66 954</span>
-                    </li>
-                    <li class="footer__contact-list-item">
-                        <h2 class="footer__item-title">Visit us</h2>
-                        <span class="footer__contact-item">Ukraine, Kyiv</span>
-                        <span class="footer__contact-item">str. Oleshi 15, 62000 </span>
-                    </li>
-                    <li class="footer__contact-list-item">
-                        <h2 class="footer__item-title">Follow us</h2>
-                        <ul class="footer__contact-list-link">
-                            <li class="footer__contact-item-link"><a href="#"><img src="./img/footer-Insta.png"
-                                        alt=""></a>
-                            </li>
-                            <li class="footer__contact-item-link"><a href="#"><img src="./img/footer-Youtube.png"
-                                        alt=""></a>
-                            </li>
-                            <li class="footer__contact-item-link"><a href="#"><img src="./img/footer-Facebook.png"
-                                        alt=""></a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                <li class="footer__contact-list-item">
+                    <ul >
+                        <li class="footer__list-item"><a class=" header__active-page">Home</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__item-link">Shop</a></li>
+                        <li class="footer__list-item"> <a href="#" class="footer__item-link">Gallery</a></li>
+                        <li class="footer__list-item"> <a href="#" class="footer__item-link">Contact us</a></li>
+                    </ul>
+                </li>
+
+                <li class="footer__contact-list-item">
+                    <h2 class="footer__item-title">Contact us</h2>
+                    <a href="mailto:support@gmail.com" class="footer__contact-item">support@gmail.com</a>
+                    <a href="tel:+38 (044) 15 25 66 954" class="footer__contact-item">+38 (044) 15 25 66 954</a>
+                </li>
+
+                <li class="footer__contact-list-item">
+                    <h2 class="footer__item-title">Visit us</h2>
+                    <span class="footer__contact-item">Ukraine, Kyiv</span>
+                    <span class="footer__contact-item">str. Oleshi 15, 62000 </span>
+                </li>
+
+                <li class="footer__contact-list-item">
+                    <h2 class="footer__item-title">Follow us</h2>
+                    <ul class="footer__contact-list-link">
+                        <li class="footer__contact-item-link"><a href="#"><img src="./img/footer-Insta.png" alt=""></a>
+                        </li>
+                        <li class="footer__contact-item-link"><a href="#"><img src="./img/footer-Youtube.png"
+                                    alt=""></a>
+                        </li>
+                        <li class="footer__contact-item-link"><a href="#"><img src="./img/footer-Facebook.png"
+                                    alt=""></a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
         </div>
     </footer>
 
